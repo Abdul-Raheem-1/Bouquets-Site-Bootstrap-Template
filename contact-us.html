@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Java Florist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-4 col-md-5 col-sm-6">
+                    <a href="index.html">
+                        <img src="imgs/java-florist-logo.png" alt="Java Florist">
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-5 col-md-4 d-none d-md-block text-right my-auto">
+                    <p class="mb-0">Need Help? Give us a ring: <b>+91 20 8068 7498</b></p>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 text-right my-auto">
+                    <div class="loginMyAcc d-inline-block cursorPointer" data-toggle="modal" data-target="#loginRegisterForm"></div>
+                </div>
+                <div class="modal fade" id="loginRegisterForm" tabindex="-1" role="dialog" aria-labelledby="loginRegisterFormLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark" id="loginRegisterFormLabel">Please Sign In or Sign Up!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 p-5 text-right my-auto">
+                                        <h5 class="text-center text-info mb-4 ctgDivider"><span>Sign In</span></h5>
+                                        <form method="GET">
+                                            <input class="my-2 border-right border-bottom" type="email" required name="signInEmail" id="signInEmail" placeholder="Email" />
+                                            <input class="my-2 border-right border-bottom" type="password" required name="signInPassword" id="signInPassword" placeholder="Password" />
+                                            <a href="#" class="d-block pl-3 mt-2 actionLink">Forgot Password?</a>
+                                            <input type="submit" id="signIn" class="btn btn-primary mt-3" value="Sign In" />
+                                        </form>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 p-5 text-right my-auto border-left">
+                                        <h5 class="text-center text-info mb-4 ctgDivider"><span>Sign Up</span></h5>
+                                        <form method="POST">
+                                            <input type="text" class = "my-2 border-right border-bottom form-control" required name="firstName" id="firstName" placeholder = "First Name">
+                                            <input type="text" class = "my-2 border-right border-bottom form-control" required name="lastName" id="lastName" placeholder = "Last Name">
+                                            <input type="email" class = "my-2 border-right border-bottom form-control" required name="signUpEmail" id="signUpEmail" minlength="15" placeholder = "Email">
+                                            <input type="password" class = "my-2 border-right border-bottom form-control" required name="signUpPassword" id="signUpPassword" minlength="10" placeholder = "Password">
+                                            <input type="password" class = "my-2 border-right border-bottom form-control" required name="signUpCPassword" id="signUpCPassword" minlength="10" placeholder = "Confirm Password">
+                                            <input type="tel" class = "my-2 border-right border-bottom form-control" required name="primaryContact" id="primaryContact" minlength="10" maxlength="15" placeholder = "Primary Contact (01234567890)">
+                                            <input type="tel" class = "my-2 border-right border-bottom form-control" name="secondaryContact" id="secondaryContact" minlength="10" maxlength="15" placeholder = "Secondary Contact (Optional)">
+                                            <select id="gender" class="w-100 my-2 border-right border-bottom form-control" required>
+                                                <option value="">Select Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                            <input type="text" class = "my-2 border-right border-bottom form-control" required name="address" id="address" minlength = "40" placeholder = "Address">
+                                            <input type="submit" id="signUp" class="btn btn-primary mt-3" value="Sign Up" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse-target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapse-target">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="ml-3 nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="occasions">
+                                Occasions
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="occasions">
+                                <a href="gallery.html" class="dropdown-item">Mother's Day</a>
+                                <a href="gallery.html" class="dropdown-item">Father's Day</a>
+                                <a href="gallery.html" class="dropdown-item">New Baby</a>
+                                <a href="gallery.html" class="dropdown-item">Birthday</a>
+                                <a href="gallery.html" class="dropdown-item">Thank You</a>
+                            </div>
+                        </li>
+                        <li class="ml-3 nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="greeting_cards">
+                                Greeting Cards
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="greeting_cards">
+                                <a href="gallery.html" class="dropdown-item">Mother's Day</a>
+                                <a href="gallery.html" class="dropdown-item">Father's Day</a>
+                                <a href="gallery.html" class="dropdown-item">New Baby</a>
+                                <a href="gallery.html" class="dropdown-item">Birthday</a>
+                                <a href="gallery.html" class="dropdown-item">Thank You</a>
+                            </div>
+                        </li>
+                        <li class="ml-3 nav-item">
+                            <a href="#" class="nav-link">About Flowers</a>
+                        </li>
+                        <li class="ml-3 nav-item">
+                            <a href="#" class="nav-link">Payment Methods</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-auto">
+                    <p class="navCartIcon text-white m-0"><span class="cursorPointer"></span></p>
+                </div>
+            </div>
+        </nav>
+        <section class="my-5">
+            <div class="row">
+                <div class="helloContactUs col-12">
+                    <img src="imgs/hello.jpg" alt="Hello Image">
+                    <h1 class="display-4">Say Hello!</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 py-5 text-center contactUs">
+                        <h2>Here's how to get in touch...</h2>
+                    </div>
+                </div>
+                <div class="row text-center mb-5">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <span class="phoneUs"></span>
+                        <span class="d-block font-size-18">Call us: +91 20 8068 7498</span>
+                        <p>9am - 5.30pm, Mon - Fri, 52 weeks a year</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <span class="chatWithUs"></span>
+                        <span class="d-block font-size-18">Chat to us online...</span>
+                        <p>Simply click the chat box in the bottom left of your screen.</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <span class="emailUs"></span>
+                        <span class="d-block font-size-18">To send fan-mail...</span>
+                        <p>...feedback and enquiries email: <u>hello@javaflorist.com</u></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row somethinElse">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <img src="imgs/something-else.jpg" class="img-fluid" alt="Something Else On Your Mind">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 py-xl-0 py-lg-0 py-md-5 py-sm-5 p-5 col-sm-12 d-flex">
+                    <div class="flex-column align-self-center text-center mx-auto">
+                        <h2>Something Else On Your Mind</h2>
+                        <p>You may find the answer to your question on our FAQ page.</p>
+                        <a href="faqs.html" class="text-white"><button class="btn btn-dark px-5 py-3">FAQs</button></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-12 text-center">
+                    <h5 class="my-5">Press & Media</h5>
+                    <p>Please email <u>press@javaflorist.com</u> for all press & media enquiries.</p>
+                    <h5 class="my-5">PARTNER WITH US</h5>
+                    <p>Want to sell your bouquets on Java Florist? Register your interest in becoming part of the Java Florist family on our partnerships page.</p>
+                    <h5 class="my-5">WORK AT JAVA FLORIST</h5>
+                    <p>We are a small start-up based in a flower-filled office in Vauxhall. We are as passionate about Java Florist as we are fast-growing, and are always interested in prospective new team members. Please email us with a cover letter and up to date CV to <u>jobs@javaflorist.com</u>.</p>
+                    <h5 class="my-5">RECOMMEND A FLORIST</h5>
+                    <p class="mb-5">We love discovering new florists to join the Java Florist family. Recommend a florist today so they can start selling their bouquets to a whole new world of flower enthusiasts. Please email <u>hello@javaflorist.com</u> with links to their website if possible.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 mt-5">
+                        <h5 class="d-block text-white">Subscribe to Our Newsletter</h5>
+                        <form class="form-group subscribeNews mt-3">
+                            <input class="subsTextBox" type="email" placeholder="Enter Your Email">
+                            <label></label>
+                            <input type="submit" class="btn btn-dark" value="SUBSCRIBE">
+                        </form>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-xl-4 col-lg-4 col-md-3 col-sm-6">
+                        <ul>
+                            <li class="d-block"><a href=".#" class="text-white font-size-18">My Account</a></li>
+                            <li class="d-block"><a href="terms-of-use.html" class="text-white font-size-18">Terms of Use</a></li>
+                            <li class="d-block"><a href="acceptance-policy.html" class="text-white font-size-18">Acceptance Policy</a></li>
+                            <li class="d-block"><a href="returns-and-refunds.html" class="text-white font-size-18">Returns and Refunds</a></li>
+                            <li class="d-block"><a href="cookie-policy.html" class="text-white font-size-18">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-lg-3 col-md-3 col-sm-6">
+                        <ul>
+                            <li class="d-block"><a href="about-us.html" class="text-white font-size-18">About Us</a></li>
+                            <li class="d-block"><a href="contact-us.html" class="text-white font-size-18">Contact Us</a></li>
+                            <li class="d-block"><a href="privacy-policy.html" class="text-white font-size-18">Privacy Policy</a></li>
+                            <li class="d-block"><a href="terms-and-conditions.html" class="text-white font-size-18">Terms & Conditions</a></li>
+                            <li class="d-block"><a href="faqs.html" class="text-white font-size-18">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                        <p class="d-block text-white">Follow Us</p>
+                        <ul class="socialNetIcons">
+							<li class="d-inline-block"><a href="https://www.fb.com"></a></li>
+							<li class="d-inline-block"><a href="https://www.googleplus.com"></a></li>
+							<li class="d-inline-block"><a href="https://www.twitter.com"></a></li>
+							<li class="d-inline-block"><a href="https://www.instagram.com"></a></li>
+							<li class="d-inline-block"><a href="https://www.pinterest.com"></a></li>
+                            <li class="d-inline-block"><a href="https://www.youtube.com"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12">
+                        <img src="imgs/java-florist-logo.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center mt-3">
+                    <div class="col-12">
+                        <p class="text-white">&copy; 2020 / JAVA FLORIST LTD / ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

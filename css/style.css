@@ -1,0 +1,341 @@
+ @charset "utf-8";
+ @font-face
+ {
+     src: url(../fonts/DMSans-Regular.ttf);
+     font-family: productFont;
+ }
+ *
+ {
+     user-select: none;
+ }
+ a
+ {
+     display: block;
+ }
+ b
+ {
+     font-weight: 500;
+ }
+ input[type=text], input[type=email], input[type=password], input[type=tel]
+ {
+    border: none;
+    padding: 4px 15px;
+    border-radius: 2px;
+    width: 100%;
+    vertical-align: middle;
+ }
+ ul
+ {
+     padding: 0px;
+ }
+ li
+ {
+     list-style: none;;
+ }
+ .btn:focus
+ {
+     outline: none;
+     box-shadow: none;
+ }
+ .btn:active
+ {
+     box-shadow: inset 1px 1px 2px 0px;
+ }
+ .cursorPointer
+ {
+     cursor: pointer;
+ }
+.font-size-18
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+.productFontFam
+{
+    font-family: productFont;
+}
+.loginMyAcc::before,
+.socialNetIcons li a,
+.phoneUs,
+.chatWithUs,
+.emailUs,
+.navCartIcon > span
+{
+    background-image: url(../imgs/icon-sheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+.loginMyAcc::before
+{
+    content: "";
+    width: 28px;
+    height: 34px;
+    background-position: -216px 0px;
+    opacity: 0.6;
+}
+.loginMyAcc::after
+{
+    content: "Login/Register";
+    margin-left: 5px;
+    opacity: 0.7;
+}
+.loginMyAcc:hover::before, .loginMyAcc:hover::after
+{
+    opacity: 1;
+}
+nav
+{
+    background: rgb(146,91,249);
+    background: linear-gradient(270deg, rgba(146,91,249,1) 0%, rgba(247,43,147,1) 100%);
+}
+.navCartIcon > span
+{
+    background-position: -741px 0px;
+    width: 40px;
+    height: 40px;
+}
+.navCartIcon::before, .navCartIcon::after
+{
+    display: inline-block;
+}
+.navCartIcon::before
+{
+    content: "Oops your cart is empty :)";
+    margin-right: 15px;
+}
+.navCartIcon::after
+{
+    content: "0";
+    margin-left: -10px;
+    background-color: #f32525;
+    padding: 2px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.addItemtoCart
+{
+    background-color: #ea5ca3;
+}
+.addItemtoCart:hover
+{
+    background-color: #e64394;
+}
+.navbar-toggler
+{
+    border-color: rgba(255, 255, 255, 0.48) !important;
+}
+nav li a
+{
+    color: white !important;
+    border-radius: 2%;
+}
+nav li a:hover
+{
+    background-color: #ffffff;
+    color: black !important;
+}
+.dropdown-item
+{
+    color: #212529 !important;
+}
+.dropdown-item:hover
+{
+    color: white !important;
+    background-color: #d43bb6;
+}
+.whyJF
+{
+    font-size: 30px;
+    font-weight: 400;
+}
+.whyJFIcons > img
+{
+    width: 60px;
+}
+.ctgDivider
+{
+    border-bottom: 2px solid #ccc;   
+    display: block;
+    width: 100%;
+    line-height: 5px;
+}
+.ctgDivider > span
+{
+    background-color: white;
+    padding: 0px 20px;
+}
+.carousel-control-next, .carousel-control-prev
+{
+    width: 3%;
+    background-color: #0000001a;
+}
+footer
+{
+    background: rgb(146,91,249);
+    background: linear-gradient(270deg, rgba(146,91,249,1) 0%, rgba(247,43,147,1) 100%);    
+}
+.subsTextBox
+{
+    max-width: 350px;
+    min-width: 100px;
+}
+.socialNetIcons li a
+{
+    width: 53px;
+    height: 53px;
+}
+.socialNetIcons li:first-child a 
+{
+    background-position: -248px -3px;
+}
+.socialNetIcons li:nth-child(2) a
+{
+    background-position: -301px -3px;
+}
+.socialNetIcons li:nth-child(3) a
+{
+    background-position: -355px -3px;
+}
+.socialNetIcons li:nth-child(4) a
+{
+    background-position: -409px -3px;
+}
+.socialNetIcons li:nth-child(5) a
+{
+    background-position: -463px -3px;
+}
+.socialNetIcons li:last-child a
+{
+    background-position: -517px -3px;
+}
+.termsofusePage p, .acceptancePolicy p, .returnsandRefunds p, .cookiePolicy p, .privacyPolicy p, .termsandConditions p, .faqs p
+{
+    font-size: 18px;
+    text-align: justify;
+}
+.returnsandRefunds > ul
+{
+    margin-left: 40px;
+}
+.returnsandRefunds > ul > li
+{
+    font-size: 18px;
+    list-style-type: disc;
+    text-align: justify;
+    margin-top: 20px;
+}
+.helloContactUs, .helloaboutUs
+{
+    position: relative;
+    text-align: center;
+}
+.helloContactUs > img, .helloaboutUs > img
+{
+    width: 100%;
+}
+.helloContactUs > h1, .helloaboutUs > h1
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.phoneUs, .chatWithUs, .emailUs
+{
+    height: 75px;
+}
+.phoneUs
+{
+    background-position: -573px 0px;
+    width: 49px;
+}
+.chatWithUs
+{
+    background-position: -681px 0px;
+    width: 56px;
+}
+.emailUs
+{
+    background-position: -627px 0px;
+    width: 51px;
+}
+.somethinElse > div
+{
+    padding: 0px;
+}
+.somethinElse > div:last-child
+{
+    background-color: #ffefe9;
+}
+.handpickedFlorists
+{
+    background-color: #F0F6F8;
+}
+.uniqueBouquets
+{
+    background-color:  #ffefe9;
+}
+.flowersatBest
+{
+    background-color: #a552e6;
+}
+.card:hover
+{
+    box-shadow: 1px 1px 8px 0px #00000042 !important;
+}
+.zoomimg:hover
+{
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+@media only screen and (max-width: 576px)
+{
+    .nav li a:hover
+    {
+        background-color: transparent !important;
+    }
+    .subscribeNews > input[type=submit]
+    {
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+    }
+    .handpickedFlorists
+    {
+        padding: 20px !important;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .nav-item
+    {
+        margin-left: 0px !important;
+    }
+    .carouselPrd
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 992px)
+{
+    .handpickedFlorists, .flowersatBest
+    {
+        margin-top: 10px !important;
+    }
+    .uniqueBouquets
+    {
+        margin-bottom: 10px !important;
+    }
+    .navCartIcon::before
+    {
+        content: "";
+        margin-right: 0px;
+    }
+}
+@media only screen and (max-width: 1200px)
+{
+
+}
